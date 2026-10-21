@@ -207,14 +207,15 @@ export const toolDescription: INodeProperties[] = [
 		required: true,
 		placeholder: 'e.g. #B3202C, #1F4E79',
 		description:
-			'Comma-separated six-digit hex colors, one per mask (or one color for the whole product when no masks are given)',
+			'Comma-separated six-digit hex colors, one per mask, in the same order as the masks',
 		displayOptions: { show: { resource, operation: ['colorways'] } },
 	},
 	imageList(
 		'masks',
 		'Masks',
-		'Up to 4 masks marking the regions to recolor, paired by position with Colors.',
+		'Up to 4 black-and-white masks marking the regions to recolor, paired by position with the hex codes.',
 		{ resource, operation: ['colorways'] },
+		true,
 	),
 	// ---- Material Swap
 	imageList(

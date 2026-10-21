@@ -92,7 +92,12 @@ export async function resolveImage(
 	field: string,
 	required: boolean,
 ): Promise<MultipartFile | undefined> {
-	const source = this.getNodeParameter(`${name}Source`, itemIndex, 'binary') as string;
+	// Hidden parameters (an optional image the current model does not take) resolve to the fallback.
+	const source = this.getNodeParameter(
+		`${name}Source`,
+		itemIndex,
+		required ? 'binary' : 'none',
+	) as string;
 	if (source === 'none') {
 		if (required) {
 			throw new NodeOperationError(this.getNode(), `'${field}' is required for this operation`, {
