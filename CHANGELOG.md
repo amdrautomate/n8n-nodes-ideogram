@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.1
+
+- Published through the npm Trusted Publisher (GitHub Actions provenance). No functional changes.
+
 ## 0.1.0
 
 - Initial release.

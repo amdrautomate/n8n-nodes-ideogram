@@ -1,6 +1,6 @@
 {
   "name": "@amdrautomate/n8n-nodes-ideogram",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "n8n community node for Ideogram: generate, edit, remix, upscale and describe images with crisp text rendering, generate video, run ad and product tools, and poll generations",
   "license": "MIT",
   "homepage": "https://github.com/amdrautomate/n8n-nodes-ideogram",
