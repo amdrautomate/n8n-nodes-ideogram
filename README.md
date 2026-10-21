@@ -61,6 +61,7 @@ The node is marked `usableAsTool`. Add it to an AI Agent, pick a resource and op
 - Ideogram allows 10 requests in flight per account by default; bursts beyond that return `429`. Run items sequentially or add a Wait node for large batches.
 - Errors carry Ideogram's own message plus a hint, for example `insufficient_funds` → add credits in the API dashboard.
 - The node has no runtime dependencies; multipart uploads are encoded by the node itself.
+- Ideogram also publishes an official MCP server (`https://mcp.ideogram.ai/mcp`, OAuth) for chat assistants. In n8n you can attach it with the built-in MCP Client Tool node; this community node is the choice for deterministic workflow steps, binary hand-off to other nodes, batch processing and dry-run pricing without an LLM in the loop.
 
 ## Compatibility
 
