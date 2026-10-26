@@ -316,7 +316,7 @@ export const toolDescription: INodeProperties[] = [
 				type: 'string',
 				default: '',
 				typeOptions: { rows: 3 },
-				placeholder: 'Shop now => Comprar ahora\nFree shipping => Envío gratis',
+				placeholder: 'Buy now => Order now\nFree shipping => No delivery charge',
 				description: 'Pre-approved wording, one "original => replacement" mapping per line',
 				displayOptions: { show: { '/operation': ['adLocalizer'] } },
 			},
